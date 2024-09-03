@@ -1,8 +1,8 @@
 {
-	"name": "flowbite-astro-admin-dashboard",
-	"version": "1.0.2",
+	"name": "cuidamiau-admin",
+	"version": "0.0.1",
 	"private": "true",
-	"description": "A free and open-source admin dashboard template built with Tailwind CSS, Flowbite and Astro",
+	"description": "An admin dashboard to manage Cuidamiau services",
 	"keywords": [
 		"tailwind",
 		"tailwind css",
@@ -19,14 +19,9 @@
 	],
 	"homepage": "https://flowbite.com",
 	"bugs": "https://github.com/themesberg/flowbite-astro-admin-dashboard/issues",
-	"repository": "https://github.com/themesberg/flowbite-astro-admin-dashboard.git",
+	"repository": "https://github.com/lele589/cuidamiau-admin",
 	"license": "MIT",
-	"author": "Bergside Inc.",
-	"contributors": [
-		"Zoltán Szőgyényi <https://twitter.com/zoltanszogyenyi>",
-		"Robert Tanislav <https://twitter.com/roberttanislav>",
-		"Julian Cataldo <https://twitter.com/Julian_Cataldo>"
-	],
+	"author": "Elena Carrasco",
 	"type": "module",
 	"scripts": {
 		"astro": "astro",
