@@ -24,7 +24,7 @@ const users = await fetchData('users');
 						<li class="inline-flex items-center">
 							<a
 								href="#"
-								class="inline-flex items-center text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white"
+								class="inline-flex items-center text-gray-700 hover:text-primary-200 dark:text-gray-300 dark:hover:text-white"
 							>
 								<svg
 									class="w-5 h-5 mr-2.5"
@@ -52,7 +52,7 @@ const users = await fetchData('users');
 								>
 								<a
 									href="#"
-									class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white"
+									class="ml-1 text-gray-700 hover:text-primary-200 md:ml-2 dark:text-gray-300 dark:hover:text-white"
 									>Users</a
 								>
 							</div>
@@ -94,7 +94,7 @@ const users = await fetchData('users');
 								type="text"
 								name="email"
 								id="users-search"
-								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 								placeholder="Search for users"
 							/>
 						</div>
@@ -166,7 +166,7 @@ const users = await fetchData('users');
 					<!-- <button
 						type="button"
 						data-refresh
-						class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+						class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-200 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-200 dark:hover:bg-primary-200 dark:focus:ring-primary-300"
 					>
 						<svg
 							class="w-5 h-5 mr-2 -ml-1"
@@ -189,7 +189,7 @@ const users = await fetchData('users');
 						type="button"
 						data-modal-target="add-user-modal"
 						data-modal-toggle="add-user-modal"
-						class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+						class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-200 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-200 dark:hover:bg-primary-200 dark:focus:ring-primary-300"
 					>
 						<svg
 							class="w-5 h-5 mr-2 -ml-1"
@@ -238,7 +238,7 @@ const users = await fetchData('users');
 											id="checkbox-all"
 											aria-describedby="checkbox-1"
 											type="checkbox"
-											class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
+											class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-200 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
 										/>
 										<label for="checkbox-all" class="sr-only">checkbox</label>
 									</div>
@@ -294,7 +294,7 @@ const users = await fetchData('users');
 														id="checkbox-{{ .id }}"
 														aria-describedby="checkbox-1"
 														type="checkbox"
-														class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
+														class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-200 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
 													/>
 													<label for="checkbox-{{ .id }}" class="sr-only">
 														checkbox
@@ -340,7 +340,7 @@ const users = await fetchData('users');
 													type="button"
 													data-modal-target="edit-user-modal"
 													data-modal-toggle="edit-user-modal"
-													class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+													class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-200 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 dark:bg-primary-200 dark:hover:bg-primary-200 dark:focus:ring-primary-300"
 												>
 													<svg
 														class="w-4 h-4 mr-2"
@@ -436,7 +436,7 @@ const users = await fetchData('users');
 									name="first-name"
 									value="Bonnie"
 									id="first-name"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="Bonnie"
 									required
 								/>
@@ -452,7 +452,7 @@ const users = await fetchData('users');
 									name="last-name"
 									value="Green"
 									id="last-name"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="Green"
 									required
 								/>
@@ -468,7 +468,7 @@ const users = await fetchData('users');
 									name="email"
 									value="bonnie@flowbite.com"
 									id="email"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="example@company.com"
 									required
 								/>
@@ -484,7 +484,7 @@ const users = await fetchData('users');
 									name="position"
 									value="React Developer"
 									id="position"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="e.g. React developer"
 									required
 								/>
@@ -500,7 +500,7 @@ const users = await fetchData('users');
 									name="current-password"
 									value="••••••••"
 									id="current-password"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="••••••••"
 									required
 								/>
@@ -516,7 +516,7 @@ const users = await fetchData('users');
 									name="new-password"
 									value="••••••••"
 									id="new-password"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="••••••••"
 									required
 								/>
@@ -530,7 +530,7 @@ const users = await fetchData('users');
 								<textarea
 									id="biography"
 									rows="4"
-									class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-200 focus:border-primary-200 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="👨‍💻Full-stack web developer. Open-source contributor."
 									>👨‍💻Full-stack web developer. Open-source contributor.</textarea
 								>
@@ -542,7 +542,7 @@ const users = await fetchData('users');
 						class="items-center p-6 border-t border-gray-200 rounded-b dark:border-gray-700"
 					>
 						<button
-							class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+							class="text-white bg-primary-200 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-200 dark:hover:bg-primary-200 dark:focus:ring-primary-300"
 							type="submit">Save all</button
 						>
 					</div>
@@ -595,7 +595,7 @@ const users = await fetchData('users');
 									type="text"
 									name="first-name"
 									id="first-name"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="Bonnie"
 									required
 								/>
@@ -610,7 +610,7 @@ const users = await fetchData('users');
 									type="text"
 									name="last-name"
 									id="last-name"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="Green"
 									required
 								/>
@@ -625,7 +625,7 @@ const users = await fetchData('users');
 									type="email"
 									name="email"
 									id="email"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="example@company.com"
 									required
 								/>
@@ -640,7 +640,7 @@ const users = await fetchData('users');
 									type="text"
 									name="position"
 									id="position"
-									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-200 focus:border-primary-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="e.g. React developer"
 									required
 								/>
@@ -654,7 +654,7 @@ const users = await fetchData('users');
 								<textarea
 									id="biography"
 									rows="4"
-									class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-200 focus:border-primary-200 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-200 dark:focus:border-primary-200"
 									placeholder="👨‍💻Full-stack web developer. Open-source contributor."
 								></textarea>
 							</div>
@@ -665,7 +665,7 @@ const users = await fetchData('users');
 						class="items-center p-6 border-t border-gray-200 rounded-b dark:border-gray-700"
 					>
 						<button
-							class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+							class="text-white bg-primary-200 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-200 dark:hover:bg-primary-200 dark:focus:ring-primary-300"
 							type="submit">Add user</button
 						>
 					</div>
