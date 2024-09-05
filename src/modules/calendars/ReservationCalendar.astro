@@ -1,0 +1,42 @@
+---
+const { roomName } = Astro.props;
+---
+
+<style>
+  .fc-header-toolbar {
+    margin: 0 !important;
+  }
+</style>
+
+<div id={`calendar-${roomName}`} data-room-name={roomName}></div>
+
+<script>
+  import { Calendar } from '@fullcalendar/core';
+  import dayGridPlugin from '@fullcalendar/daygrid';
+
+  setTimeout(() => {
+    const calendars = document.querySelectorAll(`[data-room-name]`);
+
+    calendars.forEach(calendarEl => {
+      const calendar = new Calendar(calendarEl, {
+        plugins: [dayGridPlugin],
+        initialView: 'dayGridWeek',
+        headerToolbar: false,
+        height: 120,
+        locale: 'es', // Establecer el idioma en español
+        firstDay: 1, // Establecer el primer día de la semana en lunes
+        dayHeaderFormat: { weekday: 'short', day: 'numeric', month: 'numeric' }, // Cambiar formato de fecha
+        titleFormat: { year: 'numeric', month: 'long' } // Formato del título del calendario
+      });
+
+      calendar.render();
+
+      // Agrega la instancia del calendario al array global
+      window.calendars = window.calendars || [];
+      window.calendars.push(calendar);
+    
+      // Dispara un evento para notificar que se ha agregado un calendario
+      document.dispatchEvent(new CustomEvent('calendarAdded', { detail: window.calendars }));
+    });
+  }, 0);
+</script>
