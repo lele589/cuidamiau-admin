@@ -1,5 +1,10 @@
+---
+import NewReservationModal from './NewReservationModal.astro';
+---
+
 <button
     id="add-reservation-button"
+    data-modal-target="clienteModal" data-modal-toggle="clienteModal"
     type="button"
     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-200 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 dark:bg-primary-200 dark:hover:bg-primary-200 dark:focus:ring-primary-300"
 >
@@ -8,6 +13,7 @@
     </svg>
     Añadir reserva
 </button>
+<NewReservationModal />
 
 <script>
     document.addEventListener('calendarAdded', (event) => {
