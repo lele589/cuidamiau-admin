@@ -18,11 +18,21 @@ const { roomName } = Astro.props;
     const calendars = document.querySelectorAll(`[data-room-name]`);
 
     calendars.forEach(calendarEl => {
+      const roomName = calendarEl.getAttribute('data-room-name');
+      let showDayHeader = false
+      let rowHeight = 100;
+
+      if (roomName === "room1") {
+        showDayHeader = true;
+        rowHeight = 120;
+      }
+
       const calendar = new Calendar(calendarEl, {
         plugins: [dayGridPlugin],
         initialView: 'dayGridWeek',
         headerToolbar: false,
-        height: 120,
+        height: rowHeight,
+        dayHeaders: showDayHeader,
         locale: 'es', // Establecer el idioma en español
         firstDay: 1, // Establecer el primer día de la semana en lunes
         dayHeaderFormat: { weekday: 'short', day: 'numeric', month: 'numeric' }, // Cambiar formato de fecha
