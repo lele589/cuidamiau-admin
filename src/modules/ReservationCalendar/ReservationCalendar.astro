@@ -41,11 +41,17 @@ const { roomName } = Astro.props;
 
       calendar.render();
 
-      // Agrega la instancia del calendario al array global
+      // TODO: delete
+      //   calendar.addEvent({
+      //   title: "Arya y Dustin",
+      //   start: new Date('2024-09-02'),
+      //   end: new Date('2024-09-07'),
+      //   allDay: true
+      // }, true);
+
       window.calendars = window.calendars || [];
       window.calendars.push(calendar);
-    
-      // Dispara un evento para notificar que se ha agregado un calendario
+
       document.dispatchEvent(new CustomEvent('calendarAdded', { detail: window.calendars }));
     });
   }, 0);
