@@ -49,17 +49,17 @@
 
             <!-- Fecha de inicio -->
             <div>
-              <label for="fecha-inicio"
+              <label for="initialDate"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de inicio *</label>
-              <input type="date" id="fecha-inicio"
+              <input type="date" id="initialDate"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 required>
             </div>
 
             <!-- Fecha de fin -->
             <div>
-              <label for="fecha-fin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de fin *</label>
-              <input type="date" id="fecha-fin"
+              <label for="endDate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de fin *</label>
+              <input type="date" id="endDate"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 required>
             </div>
@@ -112,6 +112,9 @@
   document.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.getElementById('saveButton');
     const form = document.getElementById('newReservationForm');
+    const initialDate = document.getElementById('initialDate');
+    const endDate = document.getElementById('endDate');
+
     
     const requiredFields = form.querySelectorAll('input[required], select[required]');
 
@@ -136,6 +139,18 @@
       }
     }
 
+    function ajustarFechaFin() {
+      const initialDateValue = initialDate.value;
+
+      if (initialDateValue) {
+        endDate.min = initialDateValue;
+
+        if (endDate.value && endDate.value < initialDateValue) {
+          endDate.value = '';
+        }
+      }
+    }
+
     // Evento para inputs de texto y selects
     requiredFields.forEach(field => {
       field.addEventListener('input', checkFormCompletion);
@@ -143,5 +158,11 @@
     });
 
     checkFormCompletion(); // Validación inicial
+
+    // Agregar un evento cuando se cambie la fecha de inicio
+    initialDate.addEventListener('change', ajustarFechaFin);
+
+    // Validación inicial en caso de que haya una fecha de inicio predefinida
+    ajustarFechaFin();
   });
 </script>
