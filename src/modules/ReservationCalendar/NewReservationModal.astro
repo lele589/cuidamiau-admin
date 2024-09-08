@@ -20,75 +20,67 @@
         </div>
 
         <!-- Formulario dentro del modal -->
-        <form class="p-6 space-y-6">
+        <form class="p-6 space-y-6" id="newReservationForm">
           <!-- Grid para el formulario -->
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <!-- Nombre del cliente -->
             <div>
               <label for="nombre"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre del cliente</label>
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre del cliente *</label>
               <input type="text" id="nombre"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 placeholder="Ingresa el nombre del cliente" required>
             </div>
 
-            <div>
-                <label for="numero-gatos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                    Número de gatos
-                  </label>
-                  <select id="numero-gatos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-            </div>
-
-            <div>
-              <label for="fecha-inicio"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de inicio</label>
-              <input type="date" id="fecha-inicio"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                required>
-            </div>
-
-            <div>
-              <label for="fecha-fin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de
-                fin</label>
-              <input type="date" id="fecha-fin"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                required>
-            </div>
-
-            <!-- TODO: filtrar para que segun lo que elija en el numero de gatos solo salgan esas tarifas? o eliminar el desplegable de numero de gatos? -->
-            <div>
-                <label for="tarifa" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Tarifa
-                </label>
-                <select id="tarifa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-                  <option value="">Seleccione una tarifa</option>
-                  <option value="1 gato">1 gato</option>
-                  <option value="2 gatos">2 gatos</option>
-                  <option value="3 gatos">3 gatos</option>
-                  <option value="1 gato - bono30 NC">1 gato - bono30 NC</option>
-                  <option value="2 gatos - bono30 NC">2 gatos - bono30 NC</option>
-                  <option value="3 gatos - bono30 NC">3 gatos - bono30 NC</option>
-                  <option value="1 gato - bono30 C">1 gato - bono30 C</option>
-                  <option value="2 gatos - bono30 C">2 gatos - bono30 C</option>
-                  <option value="3 gatos - bono30 C">3 gatos - bono30 C</option>
-                </select>
-              </div>
-
+            <!-- Número de habitación -->
             <div>
                 <label for="numero-habitacion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                    Número de habitación
-                  </label>
-                  <select id="numero-habitacion" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                    Número de habitación *
+                </label>
+                <select id="numero-habitacion" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                     <option value="">Seleccione una habitación</option>
                     <option value="Hotel 1 - Habitación 1">Hotel 1 - Habitación 1</option>
                     <option value="Hotel 1 - Habitación 2">Hotel 1 - Habitación 2</option>
                     <option value="Hotel 1 - Habitación 3">Hotel 1 - Habitación 3</option>
                     <option value="Hotel 2 - Habitación 1">Hotel 2 - Habitación 1</option>
                     <option value="Hotel 2 - Habitación 2">Hotel 2 - Habitación 2</option>
-                  </select>
+                </select>
+            </div>
+
+            <!-- Fecha de inicio -->
+            <div>
+              <label for="fecha-inicio"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de inicio *</label>
+              <input type="date" id="fecha-inicio"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                required>
+            </div>
+
+            <!-- Fecha de fin -->
+            <div>
+              <label for="fecha-fin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de fin *</label>
+              <input type="date" id="fecha-fin"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                required>
+            </div>
+
+            <!-- Tarifa -->
+            <div>
+              <label for="tarifa" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                Tarifa *
+              </label>
+              <select id="tarifa" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                <option value="">Seleccione una tarifa</option>
+                <option value="1 gato">1 gato</option>
+                <option value="2 gatos">2 gatos</option>
+                <option value="3 gatos">3 gatos</option>
+                <option value="1 gato - bono30 NC">1 gato - bono30 NC</option>
+                <option value="2 gatos - bono30 NC">2 gatos - bono30 NC</option>
+                <option value="3 gatos - bono30 NC">3 gatos - bono30 NC</option>
+                <option value="1 gato - bono30 C">1 gato - bono30 C</option>
+                <option value="2 gatos - bono30 C">2 gatos - bono30 C</option>
+                <option value="3 gatos - bono30 C">3 gatos - bono30 C</option>
+              </select>
             </div>
           </div>
 
@@ -104,8 +96,7 @@
 
         <!-- Footer del modal -->
         <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-          <button type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+          <button type="submit" id="saveButton" class="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center" disabled>
             Guardar
           </button>
           <button data-modal-toggle="clienteModal" type="button"
@@ -115,3 +106,42 @@
       </div>
     </div>
   </div>
+
+<!-- Script para habilitar el botón "Guardar" solo si los campos requeridos están llenos -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const saveButton = document.getElementById('saveButton');
+    const form = document.getElementById('newReservationForm');
+    
+    const requiredFields = form.querySelectorAll('input[required], select[required]');
+
+    function checkFormCompletion() {
+      let allFilled = true;
+
+      requiredFields.forEach(field => {
+        if (!field.value || field.value.trim() === "") {
+          allFilled = false;
+        }
+      });
+
+      saveButton.disabled = !allFilled;
+
+      // Cambiar el estilo del botón según si está habilitado o no
+      if (allFilled) {
+        saveButton.classList.remove('bg-blue-400', 'cursor-not-allowed');
+        saveButton.classList.add('bg-blue-700', 'hover:bg-blue-800');
+      } else {
+        saveButton.classList.add('bg-blue-400', 'cursor-not-allowed');
+        saveButton.classList.remove('bg-blue-700', 'hover:bg-blue-800');
+      }
+    }
+
+    // Evento para inputs de texto y selects
+    requiredFields.forEach(field => {
+      field.addEventListener('input', checkFormCompletion);
+      field.addEventListener('change', checkFormCompletion); // Para selects y fechas
+    });
+
+    checkFormCompletion(); // Validación inicial
+  });
+</script>
